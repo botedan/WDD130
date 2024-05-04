@@ -1,0 +1,65 @@
+
+main {
+    max-width: 840px;
+}
+
+
+nav a {
+    color: rgb(21, 19, 19);
+    padding: 10px;
+    display: block;
+    background-color: steelblue;
+}
+
+
+h1 {
+    color: rgb(38, 17, 83);
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;   
+    box-shadow: 0 0 30px gray;
+}
+
+
+p {
+    padding: 0;
+}
+
+
+aside {
+    width: 20rem;
+    margin: 1rem ;  
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee; 
+    color: #333;
+    text-align: center;
+}
+
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+
+main {
+    width: auto; 
+    height: auto;
+}
+
+
+p {
+    padding: 0;
+}
+
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
