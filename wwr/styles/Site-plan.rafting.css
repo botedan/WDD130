@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #62B6CB;
+    --secondary-color: #BEE9E8;
+    --accent1-color: #D3E4EE;
+    --accent2-color: #5FA8D3;
+
+    --heading-front: 'Roboto Slab', serif;
+    --paragraph-front: 'Roboto Slab', serif;
+
+    --nav-background-color: #62B6CB;
+    --nav-link-color: #BEE9E8;
+    --nav-hover-link-color: #D3E4EE;
+    --nav-hover-background-color: #5FA8D3;
+}
+
+body {
+    font-family: var(--paragraph-front);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-front);
+    color: var(--primary-color);
+}
+
+Header {
+    padding: 10px;
+    background-color: var(--accent1-color);
+}
+
+P {
+    padding: 25px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 1.2rem;
+    Display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 10rem;
+}
+
+nav a: link, nav a :visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
