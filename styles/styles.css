@@ -21,16 +21,6 @@ nav a {
     background-color: steelblue;
 }
 
-ul {
-    list-style-type: none;
-    display: block;
-    justify-content: center;
-    width: 500px;
-    border: 1px solid gray;
-    padding: 1px;   
-    box-sizing: 30px;
-    margin: 001rem 1rem;
-}
 
 h1 {
     color: rgb(38, 17, 83);
