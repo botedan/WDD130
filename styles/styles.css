@@ -102,6 +102,11 @@ main{
     margin: 1rem;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
 aside{
     width: 20rem;
     position:relative;
