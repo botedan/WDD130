@@ -6,14 +6,13 @@
     --accent1-color: #D3E4EE;
     --accent2-color: #5FA8D3;
 
-    --heading-front: 'Roboto Slab', serif;
-    --paragraph-front: 'Roboto Slab', serif;
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Slab', serif;
 
     --nav-background-color: #62B6CB;
     --nav-link-color: #BEE9E8;
     --nav-hover-link-color: #D3E4EE;
     --nav-hover-background-color: #5FA8D3;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,10 +21,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: sans-serif; /* Use a fallback font */
-    color: var(--text-color);
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
     float: left; /* texto flutuante à esquerda */
-
 }
 
 .container {
@@ -33,66 +31,53 @@ p {
     align-items: center;
 }
 
-.container img{
+.container img {
     margin-right: 10rem; /* Espaço à direita da imagem */
 }
 
-/* nav a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 1rem;
-    padding: 1rem;
-    display: inline-block;
-    flex: 1;   
-
-} */
 nav {
-	text-align: right;
+    text-align: right;
 }
 
 .navigation {
-	display: flex;
-	list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .navigation li {
-	flex: 1 1 100%;
+    flex: 1 1 100%;
 }
 
 .navigation a {
-	display: block;
-	color: navy;
-	padding: 20px;
-	text-decoration: none;
+    display: block;
+    color: var(--nav-link-color);
+    padding: 20px;
+    text-decoration: none;
 }
 
 .navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
-main h2{ 
+main h2 {
     font-size: 2rem; /* Tamanho do texto */
-    font-weight: 840px; /* Peso da fonte */
     text-align: center; /* Alinhamento do texto */
-    color: var(--primary-color)
-    
+    color: var(--primary-color);
 }
-
 
 a:hover {
     color: var(--secondary-color);
 }
 
 .container {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container */
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza o container */
 }
 
 .hero img {
-    display: relative;
+    display: block;
     width: 100%; /* ou o tamanho desejado */
     height: auto; /* para manter a proporção */
 }
@@ -104,7 +89,7 @@ a:hover {
 
 .hero article {
     position: absolute;
-    top: 50%; /* Centraliza verticalmente */
+    top: 65%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
     width: 50%; /* ou o tamanho desejado */
@@ -115,10 +100,8 @@ a:hover {
 
 .hero article p {
     font-size: 1.5rem; /* Tamanho do texto */
-    font-weight: 840px; /* Peso da fonte */
     text-align: left; /* Alinhamento do texto */
-    color: var(--accent1-color)
-    
+    color: var(--accent1-color);
 }
 
 .hero article img {
@@ -129,11 +112,9 @@ a:hover {
     width: 20%; /* ou o tamanho desejado */
 }
 
-
-body{
+body {
     max-width: 100rem;
 }
-
 
 .hero h1 {
     max-width: 840px;
@@ -145,11 +126,6 @@ body{
     background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
     padding: 10px 20px; /* ajuste o preenchimento conforme necessário */
     z-index: 1; /* Garante que o título fique sobre a imagem */
-    font-family: var(--heading-front); /* corrija o nome da variável */
-}
-
-main img {
-    white-space: nowrap; /* Impede que as imagens quebrem linha */
 }
 
 main img {
@@ -159,12 +135,20 @@ main img {
     width: 19%; /* ou o tamanho desejado */
 }
 
-
 .sociallinks a {
     text-decoration: none; /* remova os sublinhados */
-
 }
 
 .sociallinks img {
     width: 2%;
+}
+
+header {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
 }
