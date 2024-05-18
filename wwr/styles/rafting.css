@@ -132,7 +132,7 @@ main img {
     display: inline-block; /* Faz com que as imagens se comportem como blocos inline */
     vertical-align: middle; /* Alinha verticalmente as imagens */
     margin-right: 10px; /* Espaço entre as imagens */
-    width: 19%; /* ou o tamanho desejado */
+    width: 18%; /* ou o tamanho desejado */
 }
 
 .sociallinks a {
@@ -149,6 +149,9 @@ header {
 }
 
 footer {
+    
     background-color: var(--nav-background-color);
     color: var(--accent2-color);
+    padding: 20px 0; /* Adiciona preenchimento superior e inferior de 50 pixels */
 }
+
