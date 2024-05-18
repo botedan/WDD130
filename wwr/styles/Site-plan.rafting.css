@@ -7,20 +7,19 @@ body {
 }
 
 :root {
-    --primary-color: #62B6CB;
-    --secondary-color: #BEE9E8;
-    --accent1-color: #D3E4EE;
-    --accent2-color: #5FA8D3;
+    --primary-color: #5FA8D3;
+    --secondary-color: #D3D328;
+    --accent1-color: #57528C;
+    --accent2-color: #BBF5F3;
 
-    --heading-front: 'Roboto Slab', serif;
-    --paragraph-front: 'Roboto Slab', serif;
+    --heading-font: 'Roboto Slab', serif;
+    --paragraph-font: 'Roboto Slab', serif;
 
-    --nav-background-color: #62B6CB;
-    --nav-link-color: #BEE9E8;
-    --nav-hover-link-color: #D3E4EE;
-    --nav-hover-background-color: #5FA8D3;
+    --nav-background-color: #5FA8D3;
+    --nav-link-color: #57528C;
+    --nav-hover-link-color: #D3D328;
+    --nav-hover-background-color: #BBF5F3;
 }
-
 body {
     font-family: var(--paragraph-front);
     max-width: 960px;
