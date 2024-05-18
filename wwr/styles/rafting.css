@@ -13,7 +13,7 @@
     --nav-link-color: #BEE9E8;
     --nav-hover-link-color: #D3E4EE;
     --nav-hover-background-color: #5FA8D3;
-    
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,13 +25,26 @@ p {
     font-family: sans-serif; /* Use a fallback font */
     color: var(--text-color);
     float: left; /* texto flutuante à esquerda */
-   
+
 }
 
-a {
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img{
+    margin-right: 10rem; /* Espaço à direita da imagem */
+}
+
+nav a {
     color: var(--primary-color);
     text-decoration: none;
-
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    flex: 1; /* O texto irá ocupar todo o espaço restante */
 
 }
 
@@ -41,7 +54,7 @@ a:hover {
 
 .sociallinks a {
     text-decoration: none; /* remova os sublinhados */
-    
+
 }
 
 .sociallinks img {
@@ -53,28 +66,52 @@ a:hover {
     margin: 0 auto; /* Center the container */
 }
 
-
-.hero {
-    position: relative;
-}
-
 .hero img {
-    display: block;
+    display: relative;
     width: 100%; /* ou o tamanho desejado */
     height: auto; /* para manter a proporção */
 }
 
+.hero {
+    position: relative;
+    overflow: hidden; /* Garante que o contêiner .hero se ajuste ao conteúdo */
+}
+
 .hero article {
     position: absolute;
-    top: 80%; /* centralizando verticalmente */
-    left: 70%; /* centralizando horizontalmente */
-    transform: translate(-50%, -50%); /* para centralizar completamente */
-    color: #5FA8D3; /* cor do texto */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+    width: 50%; /* ou o tamanho desejado */
     background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    padding: 15px 250px; /* ajuste o preenchimento conforme necessário */
+    z-index: 1; /* Garante que o texto fique sobre a imagem */
+}
+
+.hero article p {
+    font-size: 1.5rem; /* Tamanho do texto */
+    font-weight: 840px; /* Peso da fonte */
+    text-align: left; /* Alinhamento do texto */
+    color: var(--accent1-color)
+    
+}
+
+.hero article img {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    right: 0; /* Alinha à direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: 20%; /* ou o tamanho desejado */
+}
+
+
+body{
+    max-width: 100rem;
 }
 
 
 .hero h1 {
+    max-width: 840px;
     position: absolute;
     top: 15px; /* Ajuste conforme necessário */
     left: 50%; /* Centraliza horizontalmente */
