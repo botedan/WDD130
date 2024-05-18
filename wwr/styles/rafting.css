@@ -37,28 +37,53 @@ p {
     margin-right: 10rem; /* Espaço à direita da imagem */
 }
 
-nav a {
+/* nav a {
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1.2rem;
     margin: 1rem;
     padding: 1rem;
     display: inline-block;
-    flex: 1; /* O texto irá ocupar todo o espaço restante */
+    flex: 1;   
 
+} */
+nav {
+	text-align: right;
 }
+
+.navigation {
+	display: flex;
+	list-style: none;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+main h2{ 
+    font-size: 2rem; /* Tamanho do texto */
+    font-weight: 840px; /* Peso da fonte */
+    text-align: center; /* Alinhamento do texto */
+    color: var(--primary-color)
+    
+}
+
 
 a:hover {
     color: var(--secondary-color);
-}
-
-.sociallinks a {
-    text-decoration: none; /* remova os sublinhados */
-
-}
-
-.sociallinks img {
-    width: 2%;
 }
 
 .container {
@@ -123,3 +148,23 @@ body{
     font-family: var(--heading-front); /* corrija o nome da variável */
 }
 
+main img {
+    white-space: nowrap; /* Impede que as imagens quebrem linha */
+}
+
+main img {
+    display: inline-block; /* Faz com que as imagens se comportem como blocos inline */
+    vertical-align: middle; /* Alinha verticalmente as imagens */
+    margin-right: 10px; /* Espaço entre as imagens */
+    width: 19%; /* ou o tamanho desejado */
+}
+
+
+.sociallinks a {
+    text-decoration: none; /* remova os sublinhados */
+
+}
+
+.sociallinks img {
+    width: 2%;
+}
