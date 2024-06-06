@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: var(--paragraph-font);
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     text-align: center; /* Centraliza horizontalmente */
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 0; /* Remove o preenchimento */
